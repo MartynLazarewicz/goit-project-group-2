@@ -1,0 +1,69 @@
+// Colors
+
+$lightGreen: #c2e297;
+$vanilla: #f0d1a5;
+$darkRed: #d41443;
+$white: #ffffff;
+
+$color-primary-text: $darkRed;
+$color-primary-text-light: #ffa5ba;
+
+$color-secondary-text: #907e82;
+
+$color-dots: #d9d9d9;
+$color-dots-active: #d31342;
+
+$color-black: #000000;
+$color-white: $white;
+
+$color-bg-section: #fff5f6;
+$color-bg-mobile-menu: #e17992;
+
+$color-mobile-menu-border: #e18298;
+
+$color-bg-product-ice-cream: #ffb8ca;
+$color-bg-product-ice-coffee: $vanilla;
+$color-bg-product-milkshakes: $lightGreen;
+
+$color-bg-product-cafe: $vanilla;
+$color-bg-product-food-truck: $lightGreen;
+
+$color-bg-btn-light: $white;
+$color-bg-btn-light-active: #ecebeb;
+
+$color-bg-btn-location: #d41342;
+
+$color-bg-btn-product: $darkRed;
+$color-bg-btn-product-active: #c7133e;
+
+$color-bg-customer-review: #fafafa;
+$color-ustomer-quotes: #e1e1e1;
+
+$color-bg-socials: #fea5bb;
+$color-bg-socials-active: $darkRed;
+
+// Font-sizes
+$font-size-primary-mobile: 12px;
+$font-size-primary-tablet: 14px;
+$font-size-primary-desktop: 16px;
+
+$font-size-section-heading-mobile: 34px;
+$font-size-section-heading-secondary-mobile: 18px;
+
+$font-size-section-heading-tablet: 48px;
+$font-size-section-heading-secondary-tablet: 26px;
+
+$font-size-section-heading-desktop: 58px;
+$font-size-section-heading-secondary-desktop: 30px;
+
+$font-size-product-heading-small: 20px;
+$font-size-product-heading-big: 30px;
+
+// Font-family
+$font-family-primary: 'DM Sans', sans-serif;
+$font-family-secondary: 'Titan One', cursive;
+
+// Filter Drop-shadows
+$drop-shadow: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+
+
