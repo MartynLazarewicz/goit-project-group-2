@@ -1,0 +1,1 @@
+{"version":3,"sources":["sass/_globals.scss"],"names":[],"mappings":"AAAA,SACE,gBAAA,CACA","file":"src.b022c574.css","sourceRoot":"../src","sourcesContent":[".wrapper {\n  max-width: 1200px;\n  margin-inline: auto;\n}\n"]}
