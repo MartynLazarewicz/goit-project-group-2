@@ -1,7 +1,4 @@
-<symbol id="icon-ellipse-1" viewBox="0 0 32 32">
-<path fill="#d9d9d9" style="fill: var(--color1, #d9d9d9)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
-</symbol>
-<symbol id="icon-ellipse-2" viewBox="0 0 32 32">
+<symbol id="icon-previous" viewBox="0 0 32 32">
 <path fill="#d9d9d9" style="fill: var(--color1, #d9d9d9)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
 <symbol id="icon-house" viewBox="0 0 35 32">
