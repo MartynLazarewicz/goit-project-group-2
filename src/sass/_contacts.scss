@@ -1,0 +1,112 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  &__background {
+    margin: 0 auto;
+    padding: 43px 20px;
+    width: 220px;
+    font-family: $font-family-primary;
+    font-size: $font-size-primary-mobile;
+    font-weight: 500;
+    background: $white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+
+  &__background:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__category {
+    height: 16px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: $white;
+    border-radius: 4px;
+
+    &--cafe {
+      width: 80px;
+      background: $vanilla;
+    }
+    &--foodtruck {
+      width: 130px;
+      background: $lightGreen;
+    }
+  }
+  &__localization {
+    margin: 25px 0;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $color-ustomer-quotes;
+  }
+  &__place {
+    margin-bottom: 10px;
+    color: $color-black;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+  &__description {
+    line-height: 18px;
+    color: $color-secondary-text;
+  }
+  &__availability {
+    margin: 25px 0;
+  }
+  &__days {
+    line-height: 186%;
+    color: $color-black;
+  }
+  &__hours {
+    line-height: 186%;
+    color: $color-primary-text-light;
+  }
+  &__hours:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__communication {
+    padding-top: 25px;
+    border-top: 1px solid $color-ustomer-quotes;
+  }
+  &__phone,
+  &__email {
+    text-decoration: none;
+    line-height: 18px;
+    color: $color-secondary-text;
+  }
+  &__store {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__store-button {
+    margin: 0 auto;
+    width: 161.45px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $darkRed;
+    background: $white;
+    border-radius: 22px;
+    border: none;
+    &:hover,
+    &:focus {
+      color: $white;
+      background: $color-bg-btn-location;
+      outline: none;
+    }
+  }
+  &__store-icon {
+    width: 3.61px;
+    height: 8px;
+  }
+  &__store-arrow {
+    width: 3.61px;
+    height: 8px;
+  }
+}
