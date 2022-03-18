@@ -1,4 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .wrapper {
   max-width: 1200px;
   margin-inline: auto;
+}
+
+body {
+  font-family: $font-family-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: $color-black;
+  font-family: $font-family-primary;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
 }
