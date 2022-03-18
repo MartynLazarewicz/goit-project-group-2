@@ -2,6 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: $darkRed #c2d2e4;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $darkRed;
 }
 
 .wrapper {
@@ -11,6 +22,7 @@
 
 body {
   font-family: $font-family-primary;
+  overflow-x: hidden;
 }
 
 h1,
