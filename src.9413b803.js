@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/about/milk-320x133.png":[["milk-320x133.d6fa2f7d.png","bTiT"],"bTiT"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-project-group-2/src.1fc88c9e.js.map
+//# sourceMappingURL=/goit-project-group-2/src.9413b803.js.map
