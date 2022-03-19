@@ -1,6 +1,8 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  background-color: $color-bg-section;
+
   &__background {
     margin: 0 auto;
     padding: 43px 20px;
@@ -9,8 +11,11 @@
     font-size: $font-size-primary-mobile;
     font-weight: 500;
     background: $white;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    box-shadow: $box-shadow;
     border-radius: 24px;
+    &--first {
+      margin-top: -84px;
+    }
   }
 
   &__background:not(:last-child) {
@@ -76,6 +81,8 @@
     color: $color-secondary-text;
   }
   &__store {
+    margin-top: 54px;
+    margin-bottom: 113px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -89,11 +96,12 @@
     line-height: 21px;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     color: $darkRed;
     background: $white;
     border-radius: 22px;
     border: none;
+    cursor: pointer;
     &:hover,
     &:focus {
       color: $white;
