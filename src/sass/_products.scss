@@ -1,5 +1,5 @@
 .products {
-  padding: 0 20px;;
+  padding: 0 20px;
 
   &__about {
     font-family: $font-family-secondary;
@@ -29,10 +29,10 @@
     content: '...';
     position: absolute;
     display: block;
-    border-radius: 50%;
     letter-spacing: 4px;
     width: 100%;
-    top: 33px;
+    top: 30px;
+    font-size: 30px;
   }
   &__description {
     font-weight: 700;
