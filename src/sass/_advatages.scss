@@ -3,6 +3,7 @@
     
     &__list{
         list-style: none;
+        margin-left: 20px;
     }
 
     &__element {
@@ -30,6 +31,46 @@
             line-height: 170%;
             padding-top: 34px;
             padding-right: 70px;
+        }
+
+    }
+    @media screen and (min-width: 768px){
+        &__list {
+            display: flex;
+            margin-left: 36px;
+        }
+        &__element--img {
+            margin-top: 66px;
+        }
+        &__element--data {
+            font-size: $font-size-section-heading-tablet;
+            line-height: 54.96px;
+            padding-top: 36px;
+        }
+        &__element--description {
+            font-size: $font-size-primary-tablet;
+            line-height: 24.36px;
+            padding-top: 13px;
+            padding-right: 60px;
+        }
+    }
+    @media screen and (min-width: 1280px){
+        &__list {
+            margin-left: 115px;
+        }
+        &__element--img {
+            margin-top: 146px;
+        }
+        &__element--data {
+            font-size: $font-size-section-heading-desktop;
+            line-height: 66.41px;
+            padding-top: 40px;
+        }
+        &__element--description {
+            font-size: $font-size-primary-desktop;
+            line-height: 28.16px;
+            padding-top: 15px;
+            padding-right: 30px;
         }
     }
 }
