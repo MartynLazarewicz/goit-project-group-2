@@ -1,0 +1,91 @@
+.swiper-slide {
+  display: flex;
+}
+.slide__img {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 29px;
+}
+.content {
+
+  width: 280px;
+  height: 308px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #fafafa;
+  position: relative;
+}
+.quote{
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 61px;
+    width: 54px;
+    height:40px;
+    background-image: url(../images/quote.svg);
+    background-repeat: no-repeat;
+}
+
+.text-reviews{
+    width: 157px;
+    height: 239px;
+
+}
+.reviews {
+  font-family: DM Sans;
+  font-style: 500 medium;
+  text-decoration: underline;
+  text-decoration-color:  #E1E1E1;
+  font-size: 12px;
+  line-height: 2.583;
+  margin-left: 57px;
+  margin-right: 66px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 43px;
+  position: absolute;
+  color: #212121;
+}
+.dots{
+  position: absolute;
+  display:inline-block;
+}
+.little-dots{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 144px;
+  color: #C7133E;
+  width: 4px;
+  height: 4px;
+  margin-right: 10px;
+  background-image: url(../images/little-dots.svg);
+  justify-content: center;
+  display:flex;
+
+
+}
+.person{
+    font-family: DM Sans;
+    font-style: medium;
+    font-size: 14px;
+    line-height: 1.857;
+    text-align: center;
+    margin-top: 72px;
+}
+.slider__nav{
+
+  display: inline-block;
+}
+
+.previous{
+  position: relative;
+  display: flex;
+  width: 14px;
+  height: 13px;
+  background-image: url(../images/house.svg);
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  margin-left: 124px;
+  color: #C7133E;
+  margin-top: 30px;
+}
