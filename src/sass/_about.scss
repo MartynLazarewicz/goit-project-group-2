@@ -22,10 +22,7 @@
             font-size: $font-size-section-heading-mobile;
             line-height: 39px;
             letter-spacing: 0.04em;
-            padding-left: 60px;
-            padding-right: 60px;
-            padding-top: 15px;
-            padding-bottom: 26px;
+            padding: 15px 60px 26px 60px;
         }
     }
     &__cow-img{
@@ -42,10 +39,8 @@
             font-family: $font-family-primary;
             font-weight: 500;
             font-size: $font-size-primary-mobile;
-            line-height: 162%;
-            padding-bottom: 47px;
-            padding-left: 50px;
-            padding-right: 50px;
+            line-height: 19.44px;
+            padding: 0 50px 47px 50px;
         }
         
         &--second {
@@ -53,10 +48,8 @@
             font-family: $font-family-primary;
             font-weight: 500;
             font-size: $font-size-primary-mobile;
-            line-height: 162%;
-            padding-left: 50px;
-            padding-right: 50px;
-           
+            line-height: 19.44px;
+            padding: 0 50px 0 50px;
         }
 
         &--third {
@@ -64,16 +57,9 @@
             font-family: $font-family-primary;
             font-weight: 500;
             font-size: $font-size-primary-mobile;
-            line-height: 162%;
-            padding-bottom: 17px;
-            padding-left: 50px;
-            padding-right: 50px;
+            line-height: 19.44px;
+            padding: 20px 50px 17px 50px;
         }
-    }
-
-    &__milk-img {
-        background-image: url(../images/about/milk-320x133.png);
-        background-repeat: no-repeat;
     }
 
     &__btn {
@@ -95,9 +81,114 @@
         text-align: center;
         display: flex;
         cursor: pointer;
+        
+    }
+
+    @media screen and (max-width: 320px){
+        &__milk-img {
+            background-image: url(../images/about/milk-320x133.png);
+            background-repeat: no-repeat;
+        }
+    }
+    
+    @media screen and (min-width: 768px){
+        &__tittle--label {
+            font-size: $font-size-section-heading-secondary-tablet;
+            line-height: 30px;
+            padding-top: 130px;
+        }
+
+        &__tittle--h1 {
+            font-size: $font-size-section-heading-tablet;
+            line-height: 55px;
+            padding-bottom: 0;
+        }
+        &__cow-and-text {
+            display: flex;
+        }
+        &__description {
+            &--first {
+                font-size: $font-size-primary-tablet;
+                line-height: 24.64px;
+                padding-top: 100px;
+                padding-left: 0;
+                padding-right: 36px;
+                padding-bottom: 49px;
+            }
+            &--second {
+                font-size: $font-size-primary-tablet;
+                line-height: 24.64px;
+                padding-left: 0px;
+                padding-right: 36px;
+            }
+            &--third{
+                font-size: $font-size-primary-tablet;
+                line-height: 24.64px;
+                padding-left: 0;
+                padding-right: 36px;
+                padding-bottom: 62px;
+            }
+        }
+        &__btn {
+            margin-left: 0;
+        }
+        
+        &__cow-img {
+            padding-top: 50px;
+            padding-right: 17px;
+            padding-left: 39px;
+        }
+    }
+    
+    @media screen and (min-width: 1280px){
+        &__tittle--label {
+            font-size: $font-size-section-heading-secondary-desktop;
+            line-height: 34px;
+            padding-top: 125px;
+        }
+
+        &__tittle--h1 {
+            font-size: $font-size-section-heading-desktop;
+            line-height: 66px;
+        }
+        &__cow-and-text {
+            background-image: url(../images/about/milk-1282x534.png);
+            background-repeat: no-repeat;
+            
+        }
+        &__description {
+            &--first {
+                font-size: $font-size-primary-desktop;
+                line-height: 28.16px;
+                letter-spacing: 0.04em;
+                padding-top: 106px;
+                padding-right: 107px;
+                padding-bottom: 35px;
+            }
+            &--second {
+                font-size: $font-size-primary-tablet;
+                letter-spacing: 0.04em;
+                line-height: 28.16px;
+                padding-right: 107px;
+            }
+            &--third{
+                font-size: $font-size-primary-tablet;
+                letter-spacing: 0.04em;
+                line-height: 28.16px;
+                padding-top: 25px;
+                padding-right: 107px;
+                padding-bottom: 45px;
+            }
+        }
+        &__cow-img {
+            padding-top: 55px;
+            padding-right: 74px;
+            padding-left: 112px;
+        }
     }
 }
 
 .strzała {
     padding-left: 13.62px;
 }
+
