@@ -1,8 +1,11 @@
 .contacts {
-  display: flex;
-  flex-direction: column;
   background-color: $color-bg-section;
-
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
   &__background {
     margin: 0 auto;
     padding: 43px 20px;
@@ -18,9 +21,6 @@
     }
   }
 
-  &__background:not(:last-child) {
-    margin-bottom: 20px;
-  }
   &__category {
     height: 16px;
     text-transform: uppercase;
@@ -82,7 +82,7 @@
   }
   &__store {
     margin-top: 54px;
-    margin-bottom: 113px;
+    padding-bottom: 113px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -93,7 +93,6 @@
     height: 44px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 21px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,13 +107,120 @@
       background: $color-bg-btn-location;
       outline: none;
     }
+
+    &:hover .contacts__store-arrow,
+    &:focus .contacts__store-arrow {
+      stroke: $white;
+    }
   }
   &__store-icon {
-    width: 3.61px;
-    height: 8px;
+    width: 20px;
+    height: 10px;
+    padding-left: 10px;
   }
   &__store-arrow {
-    width: 3.61px;
+    width: 4.28px;
     height: 8px;
+    stroke: $darkRed;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    &__flex {
+      flex-direction: row;
+    }
+    &__background {
+      margin: 0;
+      margin-top: -84px;
+      padding: 50px 32px 50px 31px;
+      font-size: 14px;
+    }
+    &__category {
+      height: 28px;
+      font-size: 16px;
+      line-height: 186%;
+      &--cafe {
+        width: 73px;
+      }
+      &--foodtruck {
+        width: 138px;
+      }
+    }
+    &__localization {
+      margin: 30px 0;
+      padding-bottom: 30px;
+    }
+    &__availability {
+      margin: 30px 0;
+    }
+    &__hours:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &__communication {
+      padding-top: 30px;
+    }
+    &__store {
+      margin-top: 81px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 14.5px;
+    }
+    &__store-button {
+      margin: 0;
+      width: 191.45px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    &__flex {
+      flex-direction: row;
+      gap: 31px;
+    }
+    &__background {
+      margin: 0;
+      margin-top: -102px;
+      padding: 51px 44px 62px 43px;
+      width: 330px;
+      font-size: 16px;
+    }
+    &__category {
+      height: 28px;
+      font-size: 16px;
+      line-height: 186%;
+      &--cafe {
+        width: 73px;
+      }
+      &--foodtruck {
+        width: 138px;
+      }
+    }
+    &__localization {
+      margin: 32px 0;
+      padding-bottom: 32px;
+    }
+    &__availability {
+      margin: 32px 0;
+    }
+    &__hours:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &__communication {
+      padding-top: 32px;
+    }
+    &__store {
+      margin-top: 86px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+    &__store-button {
+      margin: 0;
+      width: 198px;
+      font-size: 16px;
+    }
   }
 }
