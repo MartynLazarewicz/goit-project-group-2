@@ -1,5 +1,6 @@
 .swiper-slide {
   display: flex;
+  overflow: hidden;
 }
 .slide__img {
   display: flex;
@@ -7,7 +8,6 @@
   padding-bottom: 29px;
 }
 .content {
-
   width: 280px;
   height: 308px;
   margin-right: 20px;
@@ -37,6 +37,7 @@
   text-decoration-color:  #E1E1E1;
   font-size: 12px;
   line-height: 2.583;
+  letter-spacing: 0.04em;
   margin-left: 57px;
   margin-right: 66px;
   text-align: center;
@@ -46,14 +47,16 @@
   color: #212121;
 }
 .dots{
-  position: absolute;
-  display:inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ 
+  
 }
 .little-dots{
-  position: relative;
   margin-top: 30px;
-  margin-left: 144px;
-  color: #C7133E;
+  margin-bottom: 18px;
   width: 4px;
   height: 4px;
   margin-right: 10px;
@@ -69,14 +72,17 @@
     font-size: 14px;
     line-height: 1.857;
     text-align: center;
-    margin-top: 72px;
+    /*margin-top: 72px;*/
 }
 .slider__nav{
-
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
 }
 
-.previous{
+.house__icon{
   position: relative;
   display: flex;
   width: 14px;
@@ -85,7 +91,71 @@
   background-color: transparent;
   border: none;
   justify-content: center;
-  margin-left: 124px;
   color: #C7133E;
   margin-top: 30px;
+  }
+.big__dots{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
 }
+.previous-right,
+.previous-left{
+  position: relative;
+  display: flex;
+  width: 14px;
+  height: 13px;
+  background-image: url(../images/big-dots.svg);
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 18px;
+  
+}
+   /* ###### TABLET #####*/
+@media screen and (min-width: 768px) {
+  .content{
+    width: 620px;
+    height: 164px;
+    margin-inline: 74px;
+  }
+  .reviews{
+    display: flex;
+    text-decoration: underline;
+    text-decoration-color:  #E1E1E1;
+    font-size: 16px;
+    line-height: 1.86;
+    margin-left: 74px;
+    position: absolute;
+    color: #212121;
+   }
+  .little-dots{
+    margin-top: 24px;
+    margin-bottom: 14px;
+  }
+}
+
+    /* ###### DESKTOP ##### */
+@media screen and (min-width: 1200px){
+  .content{
+    width: 926px;
+    height: 138px;
+    margin-inline: 177px;
+  }
+  .reviews{
+    display: flex;
+    text-decoration: underline;
+    text-decoration-color:  #E1E1E1;
+    margin-left: 74px;
+    position: absolute;
+    color: #212121;
+  }
+  .little-dots{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}    
+
