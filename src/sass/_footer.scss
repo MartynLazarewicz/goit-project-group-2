@@ -41,6 +41,8 @@
     background: $color-bg-socials;
     border-radius: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     &:hover,
     &:focus {
@@ -49,24 +51,15 @@
   }
   &__links-icon-first {
     position: absolute;
-    left: 20.59%;
-    right: 20.59%;
-    top: 20.59%;
-    bottom: 20.59%;
+    width: 20px;
   }
   &__links-icon-second {
     position: absolute;
-    left: 16.67%;
-    right: 23.33%;
-    top: 26.67%;
-    bottom: 26.67%;
+    width: 20px;
   }
   &__links-icon-third {
     position: absolute;
-    left: 37.5%;
-    right: 35%;
-    top: 20%;
-    bottom: 20%;
+    width: 9px;
   }
 
   &__contact {
