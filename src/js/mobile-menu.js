@@ -1,28 +1,25 @@
-const btnHamburger = document.querySelector('#menuHamburger');
-const header = document.querySelector('.header');
-const menu = document.querySelector('.navigation-mobile');
-const hamburgerMenu = document.querySelector('.hamburger-lines');
-const body = document.querySelector('body');
+(() => {
+  const refs = {
+    btnHamburger: document.querySelector('#menuHamburger'),
+    header: document.querySelector('.header'),
+    body: document.querySelector('body'),
+    menu: document.querySelector('.navigation-mobile'),
+    navAbout: document.querySelector('#navAbout'),
+    navHow: document.querySelector('#navHow'),
+    navProducts: document.querySelector('#navProducts'),
+    navContact: document.querySelector('#navContact'),
+  };
 
-btnHamburger.addEventListener('click', function () {
-  if (header.classList.contains('open')) {
-    // close hamburger
+  refs.btnHamburger.addEventListener('click', toggleModal);
+  refs.navAbout.addEventListener('click', toggleModal);
+  refs.navHow.addEventListener('click', toggleModal);
+  refs.navProducts.addEventListener('click', toggleModal);
+  refs.navContact.addEventListener('click', toggleModal);
 
-    header.classList.remove('open');
-    body.classList.remove('noScroll');
-    menu.classList.add('is-hidden--menu');
-    hamburgerMenu.classList.remove('hamburgerOpen');
-  } else {
-    // open hamburger
-    header.classList.add('open');
-    body.classList.add('noScroll');
-    menu.classList.remove('is-hidden--menu');
-    hamburgerMenu.classList.add('hamburgerOpen');
+  function toggleModal() {
+    refs.btnHamburger.classList.toggle('hamburgerOpen');
+    refs.header.classList.toggle('open');
+    refs.menu.classList.toggle('is-hidden--menu');
+    refs.body.classList.toggle('noScroll');
   }
-});
-
-var element = document.getElementById('#products');
-// var toTop = document.getElementById('#top');
-
-element.scrollIntoView(true);
-// toTop.scrollIntoView(true);
+})();
