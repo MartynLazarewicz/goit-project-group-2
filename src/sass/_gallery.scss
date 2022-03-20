@@ -1,29 +1,37 @@
+
+
 .gallery {
   padding-top: 97px;
+
   padding-bottom: 80px;
 }
 .gallery__img {
   display: flex;
   justify-content: center;
+
   width: 100%;
+
 }
 
 /*   #### TABLET #####*/
 
 @media screen and (min-width: 768px) {
+
   .gallery {
     padding-top: 140px;
     padding-bottom: 121px;
   }
   .gallery__img {
+
     display: flex;
     justify-content: center;
   }
-}
+  }
 
 /* ###### DESKTOP ###### */
 
 @media screen and (min-width: 1200px) {
+
   .gallery {
     padding-top: 139px;
     padding-bottom: 123px;
@@ -33,3 +41,4 @@
     justify-content: center;
   }
 }
+
