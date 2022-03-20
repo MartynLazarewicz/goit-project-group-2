@@ -1,0 +1,97 @@
+.products {
+  padding: 0 20px;
+
+  &__about {
+    font-family: $font-family-secondary;
+    font-weight: 400;
+    font-size: $font-size-section-heading-secondary-mobile;
+    line-height: 1.167;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-primary-text-light;
+    padding-bottom: 15px;
+    margin-top: 121px;
+  }
+  &__name {
+    position: relative;
+    font-family: $font-family-secondary;
+    font-weight: 400;
+    font-size: $font-size-product-heading-small;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $white;
+    padding-bottom: 33px;
+    margin-top: 22px;
+  }
+  .products__name::after {
+    content: '...';
+    position: absolute;
+    display: block;
+    letter-spacing: 4px;
+    width: 100%;
+    top: 30px;
+    font-size: 30px;
+  }
+  &__description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $white;
+    width: 200px;
+    margin: 33px auto;
+  }
+  &__btn {
+    display: flex;
+    margin: 30px auto;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 41px;
+  }
+  &__item {
+    background: $color-bg-product-ice-cream;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  &__item:nth-child(2) {
+    background: $vanilla;
+  }
+
+  &__item:nth-child(3) {
+    background: $lightGreen;
+    margin-bottom: 98px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 130px;
+  }
+  &__img {
+    max-width: 100%;
+    margin-top: -115px;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .secondary-header {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family-secondary;
+    font-weight: 400;
+    font-size: $font-size-section-heading-mobile;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-primary-text;
+    padding-bottom: 144px;
+  }
+}
