@@ -1,5 +1,9 @@
 .header {
-  background-color: #e17992;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 90;
+
   &__content {
     display: flex;
     align-items: center;
@@ -95,9 +99,10 @@
 .navigation-mobile {
   position: absolute;
   background-color: $color-bg-mobile-menu;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
+  left: 0;
   overflow-y: auto;
   transition: transform 250ms ease;
   z-index: 99;
@@ -207,7 +212,7 @@
 
 .toTop {
   position: fixed;
-  right: 20px;
+  right: 40px;
   bottom: 20px;
   background-color: #e17992;
   display: flex;
@@ -218,6 +223,7 @@
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 10px;
+  z-index: 87;
 }
 
 @media screen and (min-width: 480px) {
@@ -232,7 +238,7 @@
   }
 }
 
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 970px) {
   .hide-for-desktop {
     display: none;
   }
