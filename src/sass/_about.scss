@@ -81,16 +81,17 @@
         text-align: center;
         display: flex;
         cursor: pointer;
-        
-    }
-
-    @media screen and (max-width: 320px){
-        &__milk-img {
-            background-image: url(../images/about/milk-320x133.png);
-            background-repeat: no-repeat;
-        }
     }
     
+    @media screen and (max-width: 768px){
+        &__bg-img{
+            background-image: url(../images/about/milk-320x133.png);
+            background-repeat: no-repeat;
+            background-position: center 92%;
+            background-size: 100%;
+    }
+    }
+
     @media screen and (min-width: 768px){
         &__tittle--label {
             font-size: $font-size-section-heading-secondary-tablet;
@@ -138,9 +139,17 @@
             padding-right: 17px;
             padding-left: 39px;
         }
+
     }
     
     @media screen and (min-width: 1280px){
+
+        &__bg-img{
+            background-image: url(../images/about/milk-1282x534.png);
+            background-repeat: no-repeat;
+            background-position: center 120%;
+            background-size: 100%;
+        }
         &__tittle--label {
             font-size: $font-size-section-heading-secondary-desktop;
             line-height: 34px;
@@ -151,11 +160,7 @@
             font-size: $font-size-section-heading-desktop;
             line-height: 66px;
         }
-        &__cow-and-text {
-            background-image: url(../images/about/milk-1282x534.png);
-            background-repeat: no-repeat;
-            
-        }
+
         &__description {
             &--first {
                 font-size: $font-size-primary-desktop;
