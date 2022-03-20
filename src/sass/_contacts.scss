@@ -1,0 +1,226 @@
+.contacts {
+  background-color: $color-bg-section;
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__background {
+    margin: 0 auto;
+    padding: 43px 20px;
+    width: 220px;
+    font-family: $font-family-primary;
+    font-size: $font-size-primary-mobile;
+    font-weight: 500;
+    background: $white;
+    box-shadow: $box-shadow;
+    border-radius: 24px;
+    &--first {
+      margin-top: -84px;
+    }
+  }
+
+  &__category {
+    height: 16px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: $white;
+    border-radius: 4px;
+
+    &--cafe {
+      width: 80px;
+      background: $vanilla;
+    }
+    &--foodtruck {
+      width: 130px;
+      background: $lightGreen;
+    }
+  }
+  &__localization {
+    margin: 25px 0;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $color-customer-quotes;
+  }
+  &__place {
+    margin-bottom: 10px;
+    color: $color-black;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+  &__description {
+    line-height: 18px;
+    color: $color-secondary-text;
+  }
+  &__availability {
+    margin: 25px 0;
+  }
+  &__days {
+    line-height: 186%;
+    color: $color-black;
+  }
+  &__hours {
+    line-height: 186%;
+    color: $color-primary-text-light;
+  }
+  &__hours:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__communication {
+    padding-top: 25px;
+    border-top: 1px solid $color-customer-quotes;
+  }
+  &__phone,
+  &__email {
+    text-decoration: none;
+    line-height: 18px;
+    color: $color-secondary-text;
+  }
+  &__store {
+    margin-top: 54px;
+    padding-bottom: 113px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__store-button {
+    margin: 0 auto;
+    width: 161.45px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $darkRed;
+    background: $white;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: $white;
+      background: $color-bg-btn-location;
+      outline: none;
+    }
+
+    &:hover .contacts__store-arrow,
+    &:focus .contacts__store-arrow {
+      stroke: $white;
+    }
+  }
+  &__store-icon {
+    width: 20px;
+    height: 10px;
+    padding-left: 10px;
+  }
+  &__store-arrow {
+    width: 4.28px;
+    height: 8px;
+    stroke: $darkRed;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    &__flex {
+      flex-direction: row;
+    }
+    &__background {
+      margin: 0;
+      margin-top: -84px;
+      padding: 50px 32px 50px 31px;
+      font-size: 14px;
+    }
+    &__category {
+      height: 28px;
+      font-size: 16px;
+      line-height: 186%;
+      &--cafe {
+        width: 73px;
+      }
+      &--foodtruck {
+        width: 138px;
+      }
+    }
+    &__localization {
+      margin: 30px 0;
+      padding-bottom: 30px;
+    }
+    &__availability {
+      margin: 30px 0;
+    }
+    &__hours:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &__communication {
+      padding-top: 30px;
+    }
+    &__store {
+      margin-top: 81px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 14.5px;
+    }
+    &__store-button {
+      margin: 0;
+      width: 191.45px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    &__flex {
+      flex-direction: row;
+      gap: 31px;
+    }
+    &__background {
+      margin: 0;
+      margin-top: -102px;
+      padding: 51px 44px 62px 43px;
+      width: 330px;
+      font-size: 16px;
+    }
+    &__category {
+      height: 28px;
+      font-size: 16px;
+      line-height: 186%;
+      &--cafe {
+        width: 73px;
+      }
+      &--foodtruck {
+        width: 138px;
+      }
+    }
+    &__localization {
+      margin: 32px 0;
+      padding-bottom: 32px;
+    }
+    &__availability {
+      margin: 32px 0;
+    }
+    &__hours:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &__communication {
+      padding-top: 32px;
+    }
+    &__store {
+      margin-top: 86px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+    &__store-button {
+      margin: 0;
+      width: 198px;
+      font-size: 16px;
+    }
+  }
+}

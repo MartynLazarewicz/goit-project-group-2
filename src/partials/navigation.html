@@ -1,5 +1,5 @@
-<header class="header">
-  <div class="wrapper">
+<header id="top" class="header">
+  <div class="wrapper header__content">
     <a class="nav__logo" href="index.html">
       <img src="./images/logo.png" alt="icecream-logo" />
     </a>
@@ -8,7 +8,7 @@
       <span class="line line2"></span>
       <span class="line line3"></span>
     </a>
-    <div class="navigation-desktop hide-for-mobile">
+    <div class="navigation-desktop hide-for-tablet">
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -21,7 +21,7 @@
             <a class="nav__link" href="javascript:void(0)">How it’s made?</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="javascript:void(0)">Our products</a>
+            <a class="nav__link" href="#products">Our products</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="javascript:void(0)">Contact</a>
@@ -29,13 +29,14 @@
         </ul>
       </nav>
     </div>
-    <button class="nav__button--buy hide-for-mobile">
+    <button class="button--buy hide-for-mobile">
       Buy now
       <img src="./images/arrow-right.png" alt="arrow-right" />
     </button>
-    <div class="navigation-mobile hide-for-desktop">
+
+    <div class="navigation-mobile is-hidden--menu">
       <nav class="nav">
-        <button class="nav__button--buy">
+        <button class="button--buy">
           Buy now
           <img src="./images/arrow-right.png" alt="arrow-right" />
         </button>
@@ -44,19 +45,20 @@
             <a class="nav__link nav__link--active" href="index.html">Home</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="javascript:void(0)">About us</a>
+            <a id="navAbout" class="nav__link" href="#about">About us</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="javascript:void(0)">How it’s made?</a>
+            <a id="navHow" class="nav__link new" href="#how">How it’s made?</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="javascript:void(0)">Our products</a>
+            <a id="navProducts" class="nav__link new" href="#products">Our products</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="javascript:void(0)">Contact</a>
+            <a id="navContact" class="nav__link new" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
 </header>
+<a href="#top" class="toTop">^</a>

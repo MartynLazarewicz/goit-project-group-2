@@ -2,15 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: $darkRed #c2d2e4;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $darkRed;
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.is-hidden {
+  display: none;
 }
 
 body {
   font-family: $font-family-primary;
+  overflow-x: hidden;
 }
 
 h1,
