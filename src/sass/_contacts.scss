@@ -1,6 +1,7 @@
 .contacts {
   background-color: $color-bg-section;
   &__flex {
+    margin-top: 170px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +10,6 @@
   &__background {
     margin: 0 auto;
     padding: 43px 20px;
-    width: 220px;
     font-family: $font-family-primary;
     font-size: $font-size-primary-mobile;
     font-weight: 500;
@@ -31,7 +31,6 @@
     letter-spacing: 0.04em;
     color: $white;
     border-radius: 4px;
-
     &--cafe {
       width: 80px;
       background: $vanilla;
@@ -107,7 +106,6 @@
       background: $color-bg-btn-location;
       outline: none;
     }
-
     &:hover .contacts__store-arrow,
     &:focus .contacts__store-arrow {
       stroke: $white;
@@ -176,6 +174,10 @@
 
 @media screen and (min-width: 1280px) {
   .contacts {
+    background-image: url(../images/contacts_background.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 50%;
     &__flex {
       flex-direction: row;
       gap: 31px;
@@ -184,7 +186,6 @@
       margin: 0;
       margin-top: -102px;
       padding: 51px 44px 62px 43px;
-      width: 330px;
       font-size: 16px;
     }
     &__category {
