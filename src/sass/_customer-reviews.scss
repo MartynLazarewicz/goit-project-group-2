@@ -8,10 +8,8 @@
   padding-bottom: 29px;
 }
 .content {
-  width: 280px;
-  height: 308px;
-  margin-right: 20px;
-  margin-left: 20px;
+  height: 280px;
+  margin-inline: 20px;
   background-color: #fafafa;
   position: relative;
 }
@@ -66,12 +64,17 @@
 
 
 }
+.active{
+  justify-content: center;
+  align-items: center;
+}
 .person{
     font-family: DM Sans;
     font-style: medium;
     font-size: 14px;
     line-height: 1.857;
     text-align: center;
+    letter-spacing: 0.04em;
   
 }
 .slider__nav{
@@ -80,6 +83,7 @@
   align-items: center;
   justify-content: center;
   gap: 18px;
+  padding-bottom: 86px;
 }
 
 .house__icon{
@@ -114,13 +118,20 @@
   margin-top: 30px;
   gap: 18px;
   
+  
 }
    /* ###### TABLET #####*/
 @media screen and (min-width: 768px) {
+  .swiper-slide{
+    display: flex;
+  }
   .content{
-    width: 620px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     height: 164px;
-    margin-inline: 74px;
+    width: 620px;
+
   }
   .reviews{
     display: flex;
@@ -140,10 +151,15 @@
 
     /* ###### DESKTOP ##### */
 @media screen and (min-width: 1200px){
+  .swiper-slide{
+    display: flex;
+  }
   .content{
     width: 926px;
     height: 138px;
     margin-inline: 177px;
+    display: flex;
+
   }
   .reviews{
     display: flex;
