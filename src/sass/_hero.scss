@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 13px 20px;
+    padding: 8px 13px;
     font-size: 8px;
     font-weight: bold;
     gap: 12px;
@@ -219,6 +219,10 @@
 @media screen and (min-width: 1200px) {
   .hero {
     height: 665px;
+
+    &__btn {
+      padding: 12px 20px;
+    }
   }
   .hero-eclipse {
     width: 538px;
