@@ -1,7 +1,7 @@
 .contacts {
   background-color: $color-bg-section;
   &__flex {
-    margin-top: 170px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +86,8 @@
     flex-direction: column;
     gap: 10px;
   }
-  &__store-button {
+  &__store-button-first,
+  &__store-button-second {
     margin: 0 auto;
     width: 161.45px;
     height: 44px;
@@ -95,15 +96,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $darkRed;
-    background: $white;
     border-radius: 22px;
     border: none;
     cursor: pointer;
+  }
+  &__store-button-first {
+    color: $white;
+    background: $darkRed;
     &:hover,
     &:focus {
-      color: $white;
-      background: $color-bg-btn-location;
+      background: $color-bg-btn-product-active;
       outline: none;
     }
     &:hover .contacts__store-arrow,
@@ -111,12 +113,32 @@
       stroke: $white;
     }
   }
+
+  &__store-button-second {
+    color: $darkRed;
+    background: $white;
+    &:hover,
+    &:focus {
+      background: $color-bg-btn-light-active;
+      outline: none;
+    }
+    &:hover .contacts__store-arrow,
+    &:focus .contacts__store-arrow {
+      stroke: $white;
+    }
+  }
+
   &__store-icon {
     width: 20px;
     height: 10px;
     padding-left: 10px;
   }
-  &__store-arrow {
+  &__store-arrow-first {
+    width: 4.28px;
+    height: 8px;
+    stroke: $white;
+  }
+  &__store-arrow-second {
     width: 4.28px;
     height: 8px;
     stroke: $darkRed;
@@ -164,7 +186,8 @@
       justify-content: center;
       gap: 14.5px;
     }
-    &__store-button {
+    &__store-button-first,
+    &__store-button-second {
       margin: 0;
       width: 191.45px;
       font-size: 16px;
@@ -218,7 +241,8 @@
       justify-content: center;
       gap: 15px;
     }
-    &__store-button {
+    &__store-button-first,
+    &__store-button-second {
       margin: 0;
       width: 198px;
       font-size: 16px;
