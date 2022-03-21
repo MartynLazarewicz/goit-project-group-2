@@ -1,5 +1,9 @@
 .header {
-  background-color: #e17992;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 90;
+
   &__content {
     display: flex;
     align-items: center;
@@ -95,10 +99,12 @@
 .navigation-mobile {
   position: absolute;
   background-color: $color-bg-mobile-menu;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
-  overflow-y: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
   transition: transform 250ms ease;
   z-index: 99;
 
@@ -106,9 +112,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding-top: 60px;
     gap: 19px;
+    height: 100%;
+    overflow-y: scroll;
 
     .button--buy {
       gap: 28px;
@@ -120,6 +127,7 @@
       flex-direction: column;
       gap: 0;
       width: 100%;
+      overflow: auto;
     }
 
     &__item {
@@ -190,6 +198,7 @@
 }
 
 .noScroll {
+  position: fixed;
   overflow: hidden;
 }
 
@@ -207,7 +216,7 @@
 
 .toTop {
   position: fixed;
-  right: 20px;
+  right: 40px;
   bottom: 20px;
   background-color: #e17992;
   display: flex;
@@ -218,6 +227,7 @@
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 10px;
+  z-index: 87;
 }
 
 @media screen and (min-width: 480px) {
@@ -232,7 +242,7 @@
   }
 }
 
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 970px) {
   .hide-for-desktop {
     display: none;
   }

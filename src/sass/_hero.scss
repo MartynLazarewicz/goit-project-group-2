@@ -1,0 +1,302 @@
+.hero {
+  height: 502px;
+  background-color: #ffb8ca;
+  overflow: hidden;
+  padding-top: 83px;
+  &__content {
+    position: relative;
+    height: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 13px;
+    font-size: 8px;
+    font-weight: bold;
+    gap: 12px;
+    border-radius: 25px;
+    border: none;
+    white-space: nowrap;
+    transition: background-color 250ms ease;
+
+    &--products {
+      background-color: $color-bg-btn-product;
+
+      a {
+        color: $color-white;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $color-bg-btn-product-active;
+      }
+    }
+    &--about {
+      background-color: $color-bg-btn-light;
+      a {
+        color: $darkRed;
+      }
+      &:hover,
+      &:focus {
+        background-color: $color-bg-btn-light-active;
+      }
+    }
+  }
+}
+
+.title-content-main {
+  position: relative;
+  z-index: 2;
+  width: 290px;
+  text-transform: uppercase;
+  padding-top: 137px;
+}
+
+.hero__title {
+  font-family: $font-family-secondary;
+  font-size: 48px;
+  line-height: 46.32px;
+  color: $darkRed;
+  width: 216px;
+  padding-bottom: 20px;
+
+  &--small {
+    display: flex;
+    font-family: $font-family-secondary;
+    color: $color-white;
+    font-size: 26px;
+    line-height: 29.77px;
+  }
+}
+
+.hero-eclipse {
+  position: absolute;
+  top: 23px;
+  margin-left: 18px;
+  width: 346px;
+  height: 344px;
+  object-fit: cover;
+}
+
+.hero-icecream {
+  position: absolute;
+  width: 171px;
+  height: 410px;
+  top: 30px;
+  margin-left: 98px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-tasty {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 449px;
+  }
+  .title-content-main {
+    padding-top: 15px;
+  }
+  .hero-icecream {
+    width: 143px;
+    height: 370px;
+    top: -5px;
+    right: 218px;
+  }
+  .hero-eclipse {
+    width: 358px;
+    height: 351px;
+    right: 120px;
+    top: -61px;
+  }
+  .hero__content {
+    .hide-for-tablet {
+      display: flex;
+    }
+    .title-content-nrShops {
+      position: absolute;
+      right: 43px;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      padding-top: 24px;
+      gap: 12px;
+      color: $color-white;
+      font-family: $font-family-primary;
+
+      .nrOfCafes {
+        font-size: 8px;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: -10px;
+          right: -9px;
+        }
+
+        span {
+          font-size: 28px;
+          position: relative;
+          color: $darkRed;
+          font-family: $font-family-secondary;
+        }
+      }
+      .nrOfFoodTrucks {
+        font-size: 8px;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        img {
+          position: absolute;
+          top: -10px;
+          right: -9px;
+        }
+
+        span {
+          font-size: 28px;
+          position: relative;
+          color: $darkRed;
+          font-family: $font-family-secondary;
+        }
+      }
+    }
+  }
+  .hero__description-bioeco {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: flex-end;
+    bottom: 0;
+    left: 34px;
+    padding-bottom: 28px;
+
+    .bioeco-milk {
+      width: 126px;
+      height: 128px;
+    }
+
+    .bioeco-description {
+      max-width: 114px;
+      font-size: 8px;
+      line-height: 12px;
+      display: flex;
+      flex-direction: column;
+      color: $color-white;
+    }
+    .bioeco-description-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 665px;
+
+    &__btn {
+      padding: 12px 20px;
+    }
+  }
+  .hero-eclipse {
+    width: 538px;
+    height: 538px;
+    right: 198px;
+    top: -29px;
+  }
+  .hero-icecream {
+    width: 236px;
+    height: 557px;
+    right: 381px;
+    top: 25px;
+  }
+  .hero-tasty {
+    height: 238px;
+    width: 293px;
+  }
+  .title-content-main {
+    padding-top: 84px;
+  }
+  .hero__title {
+    font-size: 58px;
+    width: 233px;
+    line-height: 52.49px;
+  }
+  .hero__title--small {
+    font-size: 38px;
+    line-height: 43.51px;
+  }
+  .hero__btn {
+    font-size: 14px;
+  }
+
+  .hero__content {
+    .title-content-nrShops {
+      gap: 17px;
+      .nrOfCafes {
+        font-size: 14px;
+        line-height: 18.29px;
+        gap: 10px;
+
+        span {
+          font-size: 46px;
+        }
+      }
+
+      .nrOfFoodTrucks {
+        font-size: 14px;
+        line-height: 18.29px;
+        gap: 10px;
+
+        span {
+          font-size: 46px;
+        }
+      }
+    }
+  }
+
+  .hero__description-bioeco {
+    align-items: center;
+
+    .bioeco-milk {
+      width: 188px;
+      height: 189px;
+    }
+
+    .bioeco-description {
+      max-width: 200px;
+      font-size: 14px;
+      line-height: 19.6px;
+    }
+    .bioeco-description-btn {
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
