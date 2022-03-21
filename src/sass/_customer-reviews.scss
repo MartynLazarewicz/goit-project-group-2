@@ -10,8 +10,9 @@
   padding-bottom: 29px;
 }
 .content {
-  height: 280px;
-  margin-inline: 20px;
+  height: 310px;
+  width: 280px;
+  margin-inline: auto;
   background-color: #fafafa;
   position: relative;
   display: flex;
@@ -20,8 +21,8 @@
 }
 .quote {
   position: absolute;
-  margin-top: 28px;
-  margin-left: 61px;
+  left: 60px;
+  top: 10px;
   width: 54px;
   height: 40px;
   background-image: url(../images/quote.svg);
@@ -31,6 +32,9 @@
 .text-reviews {
   width: 157px;
   height: 239px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .reviews {
   font-family: DM Sans;
@@ -144,6 +148,10 @@
   .swiper-slide {
     display: flex;
   }
+  .quote {
+    left: 30px;
+    top: 21px;
+  }
   .content {
     display: flex;
     margin-left: auto;
@@ -159,7 +167,6 @@
     display: block;
     font-size: 16px;
     line-height: 1.86;
-    margin-left: 74px;
     position: absolute;
     color: #212121;
   }
@@ -191,11 +198,9 @@
 
     justify-content: center;
     align-items: center;
-
   }
   .reviews {
     display: block;
-    margin-left: 74px;
     position: absolute;
     color: #212121;
   }
