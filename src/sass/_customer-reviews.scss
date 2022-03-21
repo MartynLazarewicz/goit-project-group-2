@@ -12,6 +12,9 @@
   margin-inline: 20px;
   background-color: #fafafa;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .quote{
     position: absolute;
@@ -36,11 +39,8 @@
   font-size: 12px;
   line-height: 2.583;
   letter-spacing: 0.04em;
-  margin-left: 57px;
-  margin-right: 66px;
   text-align: center;
   justify-content: center;
-  padding-top: 43px;
   position: absolute;
   color: #212121;
 }
@@ -129,6 +129,8 @@
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+    align-items: center;
     height: 164px;
     width: 620px;
 
@@ -159,7 +161,8 @@
     height: 138px;
     margin-inline: 177px;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
   }
   .reviews{
     display: flex;
