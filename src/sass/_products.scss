@@ -68,10 +68,10 @@
     margin-bottom: 130px;
   }
   &__img {
-    max-width: 100%;
+    width: 249px;
+    height: 252px;
     margin-top: -115px;
     display: block;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -103,6 +103,10 @@
     font-size: 26px;
     line-height: 1.539;
   }
+  .products__img {
+    width: 220px;
+    height: 233px;
+  }
   .secondary-header {
     font-size: 48px;
     line-height: 1.146;
@@ -113,6 +117,10 @@
   .products__about {
     font-size: 30px;
     line-height: 1.133;
+  }
+  .products__img {
+    width: 337px;
+    height: 335px;
   }
   .secondary-header {
     font-size: 58px;
