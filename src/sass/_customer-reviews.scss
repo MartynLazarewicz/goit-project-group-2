@@ -1,5 +1,6 @@
 .swiper-slide {
-  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 .slide__img {
@@ -8,34 +9,36 @@
   padding-bottom: 29px;
 }
 .content {
-  height: 280px;
-  margin-inline: 20px;
+  height: 310px;
+  width: min(100%-20px, 400px);
+  margin-right: auto;
+  margin-left: auto;
   background-color: #fafafa;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.quote{
-    position: absolute;
-    margin-top: 28px;
-    margin-left: 61px;
-    width: 54px;
-    height:40px;
-    background-image: url(../images/quote.svg);
-    background-repeat: no-repeat;
+.quote {
+  position: absolute;
+  left: 61px;
+  top: 28px;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/quote.svg);
+  background-repeat: no-repeat;
 }
 
-.text-reviews{
-    width: 157px;
-    height: 239px;
-
+.text-reviews {
+  width: 157px;
+  height: 239px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .reviews {
   font-family: DM Sans;
-  font-style: 500 medium;
-  text-decoration: underline;
-  text-decoration-color:  #E1E1E1;
+  font-weight: 500;
   font-size: 12px;
   line-height: 2.583;
   letter-spacing: 0.04em;
@@ -43,16 +46,21 @@
   justify-content: center;
   position: absolute;
   color: #212121;
+  padding-top: 43px;
+  width: 157px;
+  margin-left: 57px;
+  margin-right: 66px;
+
+  display: flex;
 }
-.dots{
+
+.dots {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
- 
-  
 }
-.little-dots{
+.little-dots {
   margin-top: 30px;
   margin-bottom: 18px;
   width: 4px;
@@ -60,24 +68,22 @@
   margin-right: 10px;
   background-image: url(../images/little-dots.svg);
   justify-content: center;
-  display:flex;
-
-
+  display: flex;
 }
-.active{
+
+.active {
   justify-content: center;
   align-items: center;
 }
-.person{
-    font-family: DM Sans;
-    font-style: medium;
-    font-size: 14px;
-    line-height: 1.857;
-    text-align: center;
-    letter-spacing: 0.04em;
-  
+.person {
+  font-family: DM Sans;
+  font-style: medium;
+  font-size: 14px;
+  line-height: 1.857;
+  text-align: center;
+  letter-spacing: 0.04em;
 }
-.slider__nav{
+.slider__nav {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -86,19 +92,20 @@
   padding-bottom: 86px;
 }
 
-.house__icon{
+.house__icon {
   position: relative;
   display: flex;
   width: 14px;
   height: 13px;
   background-image: url(../images/house.svg);
+  background-repeat: no-repeat;
   background-color: transparent;
   border: none;
   justify-content: center;
-  color: #C7133E;
+  color: #c7133e;
   margin-top: 30px;
-  }
-.big__dots{
+}
+.big__dots {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -106,7 +113,7 @@
   gap: 18px;
 }
 .previous-right,
-.previous-left{
+.previous-left {
   position: relative;
   display: flex;
   width: 14px;
@@ -117,64 +124,78 @@
   justify-content: center;
   margin-top: 30px;
   gap: 18px;
-  
-  
 }
-   /* ###### TABLET #####*/
+
+
+/* ###### mobile #####*/
+@media screen and (min-width: 480px) {
+}
+
+/* ###### TABLET #####*/
 @media screen and (min-width: 768px) {
-  .swiper-slide{
-    display: flex;
+ 
+  .quote {
+    padding-left: 40px;
+    padding-top: 30px;
   }
-  .content{
+  .content {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
-    height: 164px;
     width: 620px;
-
+    position: relative;
+    height: 164px;
   }
-  .reviews{
+  .reviews {
     display: flex;
-    text-decoration: underline;
-    text-decoration-color:  #E1E1E1;
     font-size: 16px;
     line-height: 1.86;
-    margin-left: 74px;
     position: absolute;
     color: #212121;
-   }
-  .little-dots{
+    justify-content: center;
+    align-content: center;
+    width: 460px;
+    padding-bottom: 39px;
+    padding-top: 47px;;
+  }
+  .little-dots {
     margin-top: 24px;
     margin-bottom: 14px;
   }
 }
 
-    /* ###### DESKTOP ##### */
-@media screen and (min-width: 1200px){
-  .swiper-slide{
-    display: flex;
-  }
-  .content{
+/* ###### DESKTOP ##### */
+@media screen and (min-width: 1200px) {
+ 
+  .content {
     width: 926px;
     height: 138px;
-    margin-inline: 177px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    
+     margin-left: auto;
+    margin-right: auto;
   }
-  .reviews{
+  .reviews {
     display: flex;
-    text-decoration: underline;
-    text-decoration-color:  #E1E1E1;
-    margin-left: 74px;
     position: absolute;
     color: #212121;
+    justify-content: center;
+    align-content: center;
+    width: 750px;
+    padding-top: 47px;
+    padding-bottom: 39px;
   }
-  .little-dots{
+  .little-dots {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-}    
-
+  .quote{
+    padding-top:32px;
+    padding-left:50px;
+  }
+}
