@@ -28,6 +28,7 @@
   }
   &__cow-img {
     text-align: center;
+    margin: auto;
   }
 
   .workers__list--photo {
@@ -35,6 +36,7 @@
   }
 
   &__description {
+    padding-top: 46px;
     &--first {
       color: $color-black;
       font-family: $font-family-primary;
@@ -90,6 +92,12 @@
     }
     &--arrow {
       padding-left: 13.62px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    .workers__list--photo {
+      width: 340px;
     }
   }
 
