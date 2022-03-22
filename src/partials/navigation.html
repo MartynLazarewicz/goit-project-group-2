@@ -29,14 +29,14 @@
         </ul>
       </nav>
     </div>
-    <button class="button--buy hide-for-mobile">
+    <button class="button--buy hide-for-mobile" data-modal-open2>
       Buy now
       <img src="./images/arrow-right.png" alt="arrow-right" />
     </button>
 
     <div class="navigation-mobile is-hidden--menu">
       <nav class="nav">
-        <button class="button--buy">
+        <button class="button--buy" data-modal-open>
           Buy now
           <img src="./images/arrow-right.png" alt="arrow-right" />
         </button>
@@ -54,7 +54,7 @@
             <a id="navProducts" class="nav__link new" href="#products">Our products</a>
           </li>
           <li class="nav__item">
-            <a id="navContact" class="nav__link new" href="#contact">Contact</a>
+            <a id="navContact" class="nav__link new" href="#contacts">Contact</a>
           </li>
         </ul>
       </nav>
@@ -62,3 +62,128 @@
   </div>
 </header>
 <a href="#top" class="toTop">^</a>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <form action="" class="modal__form">
+      <div class="modal__form__container">
+        <h3 class="modal__form__title">Zostaw swoje dane w formularzu poniżej</h3>
+
+        <label class="modal__form__label" for="imie"
+          >Imie
+          <div class="modal__form__label-wrapper">
+            <input class="modal__form__input" type="text" required name="imie" id="imie" />
+            <img
+              class="modal__form__svg"
+              src="./images/person-label.svg"
+              alt=""
+              width="18"
+              height="18"
+            />
+          </div>
+        </label>
+
+        <label class="modal__form__label" for="tel"
+          >Telefon
+          <div class="modal__form__label-wrapper">
+            <input class="modal__form__input" type="tel" required name="tel" id="tel" />
+            <img
+              class="modal__form__svg"
+              src="./images/tel-label.svg"
+              alt=""
+              width="18"
+              height="18"
+            />
+          </div>
+        </label>
+
+        <label class="modal__form__label" for="mail"
+          >Email
+          <div class="modal__form__label-wrapper">
+            <input class="modal__form__input" type="email" required name="email" id="mail" />
+            <img
+              class="modal__form__svg"
+              src="./images/email-label.svg"
+              alt=""
+              width="18"
+              height="18"
+            />
+          </div>
+        </label>
+
+        <label class="modal__form__label" for="comment"
+          >Wybierz produkt:
+          <select
+            class="modal__form__select"
+            name="product"
+            id="product"
+            placeholder="wypierz produkt"
+            required
+          >
+            <option></option>
+            <option value="ice cream">ICE CREAM</option>
+            <option value="ice coffe">ICE COFFE</option>
+            <option value="milkshakes">MILKSHAKES</option>
+          </select>
+        </label>
+
+        <label class="modal__form__label" for="comment"
+          >Ilość: (Max 20 szt)
+          <input
+          type="number"
+            class="modal__form__select"
+            name="quantity"
+            id="quantity"
+            placeholder="ilość"
+            min="1" max="20"
+            required
+          >
+          </input>
+        </label>
+
+        <div class="modal__form__policy-wrapper">
+          <label class="modal__form__policy-label" for="policy">
+            <input
+              class="modal__form__policy-input"
+              type="checkbox"
+              unchecked
+              required
+              name="policy"
+              id="policy"
+            />
+            <span class="modal__form__policy-checkmark">
+              <img
+                class="modal__form__policy-checkmark-svg"
+                src="./images/policy-check.svg"
+                alt=""
+                width="13"
+                height="16"
+              />
+            </span>
+            <div class="modal__form__policy-text">
+              <span>Oświadczam iż akceptuję</span>
+              <a class="modal__form__policy-link" href="#">Regulamin</a>
+              <span>i</span>
+              <a class="modal__form__policy-link" href="#">Politykę Prywatności.</a>
+            </div>
+          </label>
+        </div>
+
+        <button id="submitForm" class="modal__form__btn" type="submit">Wyślij</button>
+      </div>
+    </form>
+    <button  class="modal__btn-close" data-modal-close>
+      <img src="./images/close-btn.svg" alt="" width="11" height="11" />
+    </button>
+  </div>
+</div>
+
+
+<script>
+const submitBtn = document.querySelector('#submitForm')
+
+
+submitBtn.addEventListener('click', function() {
+  alert("The form was submitted");
+})
+</script>
