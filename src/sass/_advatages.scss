@@ -1,9 +1,9 @@
 .advantages {
     background-color: $color-bg-section;
+    padding-bottom: 97px;
     
     &__list{
         list-style: none;
-        margin-left: 20px;
     }
 
     &__element {
@@ -30,14 +30,18 @@
             font-weight: 700;
             line-height: 170%;
             padding-top: 34px;
-            padding-right: 70px;
+            padding-right: 50px;
         }
 
     }
     @media screen and (min-width: 768px){
+        &{
+            padding-bottom: 140px;
+        }
+
         &__list {
             display: flex;
-            margin-left: 36px;
+            margin-left: 16px;
         }
         &__element--img {
             margin-top: 38px;
@@ -51,15 +55,16 @@
             font-size: $font-size-primary-tablet;
             line-height: 24.36px;
             padding-top: 13px;
-            padding-right: 60px;
+            padding-right: 40px;
         }
     }
     @media screen and (min-width: 1280px){
+
         &__list {
-            margin-left: 115px;
+            margin-left: 95px;
         }
         &__element--img {
-            margin-top: 118px;
+            margin-top: 0px;
         }
         &__element--data {
             font-size: $font-size-section-heading-desktop;
@@ -70,7 +75,7 @@
             font-size: $font-size-primary-desktop;
             line-height: 28.16px;
             padding-top: 15px;
-            padding-right: 30px;
+            padding-right: 10px;
         }
     }
 }
