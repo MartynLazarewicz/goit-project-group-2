@@ -80,13 +80,13 @@
   var slideIndex = 1;
   showSlides(slideIndex);
 
-  function plusSlides(n) {
+  window.plusSlides = function (n) {
     showSlides((slideIndex += n));
-  }
+  };
 
-  function currentSlide(n) {
+  window.currentSlide = function (n) {
     showSlides((slideIndex = n));
-  }
+  };
 
   function showSlides(n) {
     var i;
