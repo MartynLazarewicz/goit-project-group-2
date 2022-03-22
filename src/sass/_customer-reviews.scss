@@ -1,5 +1,4 @@
 .swiper-slide {
-  display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -11,8 +10,9 @@
 }
 .content {
   height: 310px;
-  width: 280px;
-  margin-inline: auto;
+  width: min(100%-20px, 400px);
+  margin-right: auto;
+  margin-left: auto;
   background-color: #fafafa;
   position: relative;
   display: flex;
@@ -21,8 +21,8 @@
 }
 .quote {
   position: absolute;
-  left: 60px;
-  top: 10px;
+  left: 61px;
+  top: 28px;
   width: 54px;
   height: 40px;
   background-image: url(../images/quote.svg);
@@ -46,6 +46,12 @@
   justify-content: center;
   position: absolute;
   color: #212121;
+  padding-top: 43px;
+  width: 157px;
+  margin-left: 57px;
+  margin-right: 66px;
+
+  display: flex;
 }
 .dots {
   display: flex;
@@ -91,6 +97,7 @@
   width: 14px;
   height: 13px;
   background-image: url(../images/house.svg);
+  background-repeat: no-repeat;
   background-color: transparent;
   border: none;
   justify-content: center;
@@ -118,39 +125,15 @@
   gap: 18px;
 }
 
-.review-mobile {
-  display: block;
-}
-
-.review-tablet {
-  display: none;
-}
-
-.review-desktop {
-  display: none;
-}
-
 /* ###### mobile #####*/
 @media screen and (min-width: 480px) {
 }
 
 /* ###### TABLET #####*/
 @media screen and (min-width: 768px) {
-  .review-mobile {
-    display: none;
-  }
-  .review-tablet {
-    display: block;
-  }
-  review-desktop {
-    display: none;
-  }
-  .swiper-slide {
-    display: flex;
-  }
   .quote {
-    left: 30px;
-    top: 21px;
+    padding-left: 40px;
+    padding-top: 30px;
   }
   .content {
     display: flex;
@@ -159,16 +142,21 @@
 
     justify-content: center;
     align-items: center;
-
-    height: 164px;
     width: 620px;
+    position: relative;
+    height: 164px;
   }
   .reviews {
-    display: block;
+    display: flex;
     font-size: 16px;
     line-height: 1.86;
     position: absolute;
     color: #212121;
+    justify-content: center;
+    align-content: center;
+    width: 460px;
+    padding-bottom: 39px;
+    padding-top: 47px;
   }
   .little-dots {
     margin-top: 24px;
@@ -178,34 +166,34 @@
 
 /* ###### DESKTOP ##### */
 @media screen and (min-width: 1200px) {
-  .review-tablet {
-    display: none;
-  }
-  .review-mobile {
-    display: none;
-  }
-  .review-desktop {
-    display: block;
-  }
-  .swiper-slide {
-    display: flex;
-  }
   .content {
     width: 926px;
     height: 138px;
-    margin-inline: 177px;
+
     display: flex;
 
     justify-content: center;
     align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
   }
   .reviews {
-    display: block;
+    display: flex;
     position: absolute;
     color: #212121;
+    justify-content: center;
+    align-content: center;
+    width: 750px;
+    padding-top: 47px;
+    padding-bottom: 39px;
   }
   .little-dots {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+  .quote {
+    padding-top: 32px;
+    padding-left: 50px;
   }
 }
