@@ -1,37 +1,30 @@
-
-.gallery{
-
+.gallery {
   padding-bottom: 80px;
+  background: linear-gradient(180deg, #fff5f6 29.5%, #ffffff 20%);
 }
 .gallery__img {
   display: flex;
   justify-content: center;
 
   width: 100%;
-
 }
 
 /*   #### TABLET #####*/
 
 @media screen and (min-width: 768px) {
-
-  .gallery{
-
+  .gallery {
     padding-bottom: 121px;
   }
   .gallery__img {
-
     display: flex;
     justify-content: center;
   }
-  }
+}
 
 /* ###### DESKTOP ###### */
 
 @media screen and (min-width: 1200px) {
-
-  .gallery{
-
+  .gallery {
     padding-bottom: 123px;
   }
   .gallery__img {
@@ -39,4 +32,3 @@
     justify-content: center;
   }
 }
-
