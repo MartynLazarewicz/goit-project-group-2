@@ -100,9 +100,6 @@
       background-position: center 92%;
       background-size: 100%;
     }
-    .workers__list--photo {
-      width: 340px;
-    }
   }
 
   @media screen and (min-width: 768px) {
@@ -159,6 +156,9 @@
       padding-top: 50px;
       padding-right: 17px;
       padding-left: 19px;
+    }
+    .workers__list--photo {
+      width: 340px;
     }
   }
 
