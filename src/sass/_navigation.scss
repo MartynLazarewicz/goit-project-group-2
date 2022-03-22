@@ -114,6 +114,7 @@
     padding-top: 60px;
     gap: 19px;
     height: 100%;
+    overflow: auto;
 
     .button--buy {
       gap: 28px;
@@ -125,7 +126,6 @@
       flex-direction: column;
       gap: 0;
       width: 100%;
-      overflow: auto;
     }
 
     &__item {
